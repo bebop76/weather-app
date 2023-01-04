@@ -1,0 +1,318 @@
+html { font-size: 100%;}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #f1f1f1;
+    padding: 40px 0;
+    margin-top: 10px;
+}
+.mainContainer{
+  width: 94%;
+  margin: 0 auto;
+  color: #01175f;
+}
+
+.main{
+    width: 100%;
+    height: 400px;
+    background: url("./assets/img/palace.png");
+    background: url("./assets/img/palace.png"), linear-gradient(to right, #bbd5ec, #8abddc);
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 25px;
+    padding: 10%;
+    margin-bottom: 25px;
+}
+.info{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+.temperature{
+    width: 25%;
+    height: 70%;
+    border-radius: 25px;
+    background: linear-gradient(#597fe9, #6faaf2);
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    transform: translate(0%, -50%);
+}
+.temperature  div  h2 { 
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+
+}
+.temperature > div {
+    float: right;
+    margin-right: 10%;
+    padding: 10% 0;
+    bottom: 0;
+}
+.sunicon{
+    width: 100px;
+    height: 100px;
+    margin-top: 60%;
+}
+.temppoint{
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#firsttemppoint{
+    width: 36px;
+    height: 36px;
+    margin-top: -8px;
+}
+.temppoint:not(#firsttemppoint){
+    margin-top: -8px;
+}
+.orario{
+    font-size: 0.8em;
+}
+.templine{
+    margin: 0;
+    padding: 0 !important;
+}
+.verticalline{
+    text-align: center;
+}
+#line{
+    margin-top: -15px;
+    display: block;
+}
+.trgradient{
+    position:relative;
+    bottom:100px;
+    left:0px;
+    width:100%;
+    height:100px;  
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: linear-gradient(to bottom,  rgba(108,166,240,0) 0%,rgba(120,180,255,0.8) 100%); /* Chrome10+,Safari5.1+ */
+}
+.forecastHours{
+    width: 100%;
+    border-radius: 25px;
+    padding: 5px;
+    color: #fff;
+    background: linear-gradient(to bottom right, #567be8, #6ca6f0);
+}
+.tab{
+  border-radius: 25px;
+  background: linear-gradient(to bottom right, #577de9, #73aff3);
+}
+.nav-tabs .navlink {
+  background-color: #fff;
+  color: #222;
+}
+.nav-tabs .nav-link.active {
+  background-color: #577de9;
+  color: #fff;
+}
+.controls{
+    display: flex;
+    flex-direction: column;    
+}
+.adding {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+}
+.adding button{
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.card1, .card2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 25px;
+    color: #fff;
+    padding: 12px;
+    margin: 1em 0;
+}
+.card1:hover, .card2:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+    
+}
+
+.card1{
+    background: linear-gradient(to right, #112e6f, #4a86c9);
+}
+.card2{
+    background: linear-gradient(to right, #545b72, #8e9cad);;
+}
+.card3{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    color: #fff;
+    padding: 20px;
+    margin: 1em 0;
+    background: linear-gradient(to right, #5a7fe9, #72b0f3);;
+}
+.card3 > * {
+    margin: 0 auto;
+}
+.card3 > h2{
+    padding: 10px;
+}
+
+.card3:hover{
+    cursor: pointer;
+}
+.wea-icon img{
+    min-width: 70%;
+}
+.city{
+    display: flex;
+    flex-direction: column;
+}
+.temp{
+    font-size: 3em;
+}
+.titleh2{
+    padding: 12px;
+}
+form {
+    color: #b8b8b8;
+    display: flex;
+    padding: 2px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+  }
+input[type="search"] {
+    border: none;
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 1.5em;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    height: 4em;
+}
+  
+input[type="search"]::placeholder {
+    color: #bbb;
+}
+button[type="submit"] {
+    text-indent: -999px;
+    margin-left: -50px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: #5a7fe9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+    opacity: 1;
+}
+.tabcard {
+    padding: 0 20px;
+    max-height: 350px;
+    margin: 0 auto;
+}
+.colonna {
+    height: 300px;
+}
+.dots {
+    text-align: center;
+    color: #fff;
+}
+
+.dots span:first-of-type {
+    color: #112e6f
+}
+.day {
+    height: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+    border: solid grey 1px;
+    color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    margin: 1em 0;
+}
+.generalinfo {
+    height: 68%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 25px;
+    border: solid grey 1px;
+    color: #fff;
+    padding: 2em;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    margin: 1em 0;
+}
+.firstcontainer {
+    width: 100%;
+}
+#windicon{
+    width: 100%;
+    height: 125px;
+    background: url("./assets/img/windicon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.secondcontainer > * {
+    margin: 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .temperature {
+      left: -10%;
+    }
+    .info{
+      color: #fff;
+      left: 20%;
+    }
+    #windicon{
+        background-position: left;
+    }
+  }
+@media screen and (max-width: 768px) {
+    .colonna {
+        height: auto;
+    }
+
+    .tabcard {
+        max-height: none;
+    }
+    .generalinfo{
+        height: auto;
+        flex-direction: row;
+    }
+    .wea-icon img{
+        min-width: 20%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .temperature div h2{
+        font-size: 2em;
+    }
+    .temperature{
+        left: -5%;
+    }
+}
